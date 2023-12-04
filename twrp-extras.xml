@@ -8,6 +8,25 @@
             fetch="https://github.com/sekaiacg"
             review="https://gerrit.twrp.me"/>
 
+    <!-- We need the TeamWin forks of these repos -->
+    <remove-project name="platform/bootable/recovery"/>
+
+    <remove-project name="platform/build" />
+    <remove-project name="platform/build/soong" />
+
+    <remove-project name="platform/external/icu" />
+    <remove-project name="platform/external/libxml2" />
+    <remove-project name="platform/external/sqlite" />
+
+    <remove-project name="platform/packages/modules/adb" />
+
+    <remove-project name="platform/system/core" />
+    <remove-project name="platform/system/libhidl" />
+    <remove-project name="platform/system/libhwbinder" />
+    <remove-project name="platform/system/security" />
+    <remove-project name="platform/system/update_engine" />
+    <remove-project name="platform/system/vold" />
+
 <!-- TWRP lives in TeamWin android-9.0 (not AOSP!) -->
     <remove-project name="platform/bootable/recovery"/>
     <project path="bootable/recovery" name="android_bootable_recovery" remote="skkk" revision="android-9.0"/>
